@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inria Serif", serif;
+}
+
+footer{
+  box-sizing: border-box;
+  width: 100% auto;
+  bottom: 0;
+  height: 16rem;
+  background-color: #789461;
+}
+
+.row{
+  width: 85%;
+  margin: auto;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col h3{
+  color: aliceblue;
+}
+.col{
+  flex-basis: 25%;
+  padding: 10px;
+}
+.col p{
+  font-size: 20px;
+}
+
+.links h3{
+  width: fit-content;
+  position: relative;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+  margin: 0.5rem;
+  margin-bottom: 40px;
+  padding: 0.5rem;
+}
+.location{
+  margin: 0.5rem;
+}
+.Whatsapp{
+  margin: 0.5rem;
+}
+.CallUs{
+  margin: 0.5rem;
+}
+.Instagram{
+  margin: 0.5rem;
+}
+.nav{
+  display: flex;
+}
+
+
+.copyright{
+  margin: 0.5rem;
+  text-align: center;
+}
