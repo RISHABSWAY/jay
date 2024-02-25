@@ -11,10 +11,11 @@ h3{
 .container{
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   flex-basis: 75%;
   border: 2px solid black;
   width: 90rem;
-  height: 70rem;
+  height: 110rem;
   margin: 2rem auto;
 }
 
@@ -33,7 +34,6 @@ img{
   align-items: stretch;
 }
 button{
-  align-items: calc(buttons);
   margin: 1rem;
   height: 2rem;
   width: fit-content;
@@ -43,24 +43,123 @@ button{
   background-color: cadetblue;
   border-radius: 5px;
 }
-.card1{
-  display: flex;
-}
-
-.card{
+.bottle{
   box-sizing: border-box;
+  width: 85rem;
+  height: 20rem;
   margin: 1rem;
-  height: 17rem;
-  width: 15rem;
-  border: 2px solid black;
-}
-
-.card-content h3{
-  display:contents;
-  font-size: 14px;
-}
-
-.card2{
   display: flex;
-  align-items: bottom;
+  flex-basis: 20%;
+}
+.card1{
+  box-sizing: border-box;
+  border: 1px solid black;
+  height: 19rem;
+  width: 15rem;
+  display: flex;
+  flex-basis: 19%;
+  margin: 0.4rem;
+}
+.wat-cont{
+  box-sizing: border-box;
+  width: 85rem;
+  height: 20rem;
+  margin: 1rem;
+  display: flex;
+}
+.card2{
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  height: 19rem;
+  width: 15rem;
+  display: flex;
+  flex-basis: 19%;
+  margin: 0.4rem;
+}
+
+.product-line {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bedroompot{
+  box-sizing: border-box;
+  width: 85rem;
+  height: 20rem;
+  margin: 1rem;
+  display: flex;
+  flex-basis: 20%;
+}
+
+.card3{
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  height: 19rem;
+  width: 15rem;
+  display: flex;
+  flex-basis: 19%;
+  margin: 0.4rem;
+}
+
+.jug-set{
+  box-sizing: border-box;
+  width: 85rem;
+  height: 20rem;
+  margin: 1rem;
+  display: flex;
+  flex-basis: 20%;
+}
+.card4{
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  height: 19rem;
+  width: 15rem;
+  display: flex;
+  flex-basis: 19%;
+  margin: 0.4rem;
+}
+
+.wat-glass-set{
+  box-sizing: border-box;
+  width: 85rem;
+  height: 20rem;
+  margin: 1rem;
+  display: flex;
+  flex-basis: 20%;
+}
+.card5{
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  height: 19rem;
+  width: 15rem;
+  display: flex;
+  flex-basis: 19%;
+  margin: 0.4rem;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+  width: 20%; /* Adjust as needed */
+  /* Other styling for cards */
+}
+
+.bottle,
+.wat-cont,
+.jug-set,
+.wat-glass-set,
+.bedroompot {
+  flex: 1;
+}
+.hidden{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .card1,
+  .card2 {
+    width: 50%; /* Adjust for smaller screens */
+  }
 }
