@@ -1,34 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Dosis:wght@200..800&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Inria Serif", serif;
 }
 
 :root{
   --mainColor: #F9EFDB;
   --textColor: #000000;
-  --navbarColor: #789461;
+  --navbarColor: #FFBE98;
 }
 
-@keyframes moveLeftToRight {
-  0% {
-    transform: translateX(0);
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .top p {
+    font-size: 14px; /* Adjust font size for smaller screens if needed */
   }
-  100% {
-    transform: translateX(100%);
-  }
-}
-.anim{
-  background-color: brown;
-  height: 2rem;
 }
 
-.top {
-  position: relative; /* or relative depending on your layout */
-  animation: moveLeftToRight 7s linear infinite; /* adjust the duration as needed */
+@media (max-width: 1024px) {
+  .top p {
+    font-size: 16px; /* Adjust font size for medium screens if needed */
+  }
 }
 
 header{
@@ -37,25 +32,30 @@ header{
   justify-content: space-between;
   height: 80px;
   padding: 0 2rem;
-  background-color: var(--navbarColor);
+  background-color: #FEFBF6;
   margin: 2rem 0;
   margin-top: 0;
 }
 
-.Giriraj{
-  font-family: "Samakan", samakan;
-}
 
 nav a{
   margin: 0 2rem;
-  color: var(--textColor);
+  color: #090801af;
   text-decoration: none;
+  font-size: 22px;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
 }
 
 nav a:hover{
-  color: whitesmoke;
+  color: #000;
 }
-
+nav img {
+  height: 350px;
+  width: 350px;
+  margin: 0;
+}
 header .nav-btn{
   padding: 5px;
   cursor: pointer;
@@ -68,14 +68,41 @@ header .nav-btn{
   font-size: 1.8rem;
 }
 
-@media only screen and (max-width: 1024px){
-  header .nav-btn{
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--textColor);
+  display: flex;
+  align-items: center;
+}
+
+/* .nameonphone{
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+} */
+
+.logo a span {
+  margin-right: 5px; /* Adjust the spacing between Giriraj and Exports */
+}
+@media only screen and (max-width: 1024px) {
+  header .nav-btn {
     visibility: visible;
     opacity: 1;
   }
+  .nameonphone{
+    display: none;
+  }
 
-  header nav{
-    position: fixed;
+
+  header nav {
+    position: absolute;
+    margin-top: -45%;
     top: 0;
     left: 0;
     height: 100%;
@@ -85,22 +112,21 @@ header .nav-btn{
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    background-color: var(--mainColor);
+    background-color: transparent;
+    /* background-color: var(--mainColor); */
     transition: 1s;
+    z-index: 1000; /* Adjust the value as needed */
+    background-color: rgba(255, 255, 255, 0.9);
     transform: translateY(-100vh);
   }
 
-  header .responsive_nav{
+
+  header .responsive_nav {
     transform: none;
   }
 
-  nav nav-close-btn{
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
+  header .nav-btn span {
+    width: 25px;
   }
-
-  nav a{
-    font-size: 1.5rem;
-  }
+  
 }

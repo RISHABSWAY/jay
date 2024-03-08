@@ -27,24 +27,21 @@ const Footer = () => {
               </a>
             </nav>
             <nav className="Whatsapp">
-              <a href="https://www.google.com/maps/dir//Giriraj+Metals+%7C+wholesaler+of+Kansa+%7C+copper+%7C+Br/data=!4m8!4m7!1m0!1m5!1m1!1s0x395e844a4c000001:0x9a83300c4bb567ef!2m2!1d72.5890829!2d23.0209045">
+              <a href="https://wa.me/918401030943">
                 <FaWhatsapp size={30} />
               </a>
             </nav>
             <nav className="CallUs">
-              <a href="https://www.google.com/maps/dir//Giriraj+Metals+%7C+wholesaler+of+Kansa+%7C+copper+%7C+Br/data=!4m8!4m7!1m0!1m5!1m1!1s0x395e844a4c000001:0x9a83300c4bb567ef!2m2!1d72.5890829!2d23.0209045">
+              <a href="tel:8401030943">
                 <FaPhoneAlt size={30} />
               </a>
             </nav>
             <nav className="Instagram">
-              <a href="https://www.google.com/maps/dir//Giriraj+Metals+%7C+wholesaler+of+Kansa+%7C+copper+%7C+Br/data=!4m8!4m7!1m0!1m5!1m1!1s0x395e844a4c000001:0x9a83300c4bb567ef!2m2!1d72.5890829!2d23.0209045">
+              <a href="https://www.instagram.com/girirajexports/">
                 <FaInstagram size={30} />
               </a>
             </nav>
             </div>
-            </div>
-            <div className="col">
-              <p><h3>Facts and Questionaire</h3></p>
             </div>
           </div>
           <hr color="Black" />
